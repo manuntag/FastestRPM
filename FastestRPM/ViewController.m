@@ -58,11 +58,9 @@
     
     NSInteger calcSpeed = self.calculatedSPEED * 0.0675;
     CGFloat angleWithSpeed = (((130 + calcSpeed)*M_PI)/180.0);
+
     
     [UIView animateWithDuration:2.0f
-                     animations:^{ self.speedNeedle.transform = CGAffineTransformMakeRotation(angle);  }  completion:^(BOOL finished) {
-        
-    [UIView animateWithDuration:3.0f
                          animations:^{ self.speedNeedle.transform = CGAffineTransformMakeRotation(angleWithSpeed);  }
                          completion:^(BOOL finished) {
             
@@ -73,8 +71,6 @@
                          
             
                          }];
-    
-                     }];
 
 }
 
