@@ -54,7 +54,7 @@
     self.speedLabel.text = [NSString stringWithFormat:@"%.2ld p/sec",(long)self.calculatedSPEED];
     
     
-    //transform needle
+    //transform needle with animation
     
     NSInteger calcSpeed = self.calculatedSPEED * 0.0675;
     CGFloat angleWithSpeed = (((130 + calcSpeed)*M_PI)/180.0);
