@@ -36,14 +36,15 @@
     [self.view addGestureRecognizer:panGestureRecognizer];
     
     
-
 }
-
-
 
 -(void)gestureRecognizerRecord:(UIPanGestureRecognizer*)panGestureRecognizer {
     
     CGPoint velocity = [panGestureRecognizer velocityInView:self.view];
+    
+    
+    //min angle
+    CGFloat angle = ((130 * M_PI)/180.0);
     
    
     // display speed
@@ -57,19 +58,24 @@
     
     NSInteger calcSpeed = self.calculatedSPEED * 0.0675;
     CGFloat angleWithSpeed = (((130 + calcSpeed)*M_PI)/180.0);
-    self.speedNeedle.transform = CGAffineTransformMakeRotation(angleWithSpeed);
     
+    [UIView animateWithDuration:2.0f
+                     animations:^{ self.speedNeedle.transform = CGAffineTransformMakeRotation(angle);  }  completion:^(BOOL finished) {
+        
+    [UIView animateWithDuration:3.0f
+                         animations:^{ self.speedNeedle.transform = CGAffineTransformMakeRotation(angleWithSpeed);  }
+                         completion:^(BOOL finished) {
+            
+    [UIView animateWithDuration:5.0f
+                     animations:^{ self.speedNeedle.transform = CGAffineTransformMakeRotation(angle);
+                     
+                     }   completion:nil];
+                         
+            
+                         }];
     
-    
-    
+                     }];
+
 }
-
-
-
-
-
-
-
-
 
 @end
