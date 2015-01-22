@@ -14,6 +14,8 @@
 		8A68F57C1A71808A00FEC4EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A68F57B1A71808A00FEC4EA /* Images.xcassets */; };
 		8A68F57F1A71808A00FEC4EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A68F57D1A71808A00FEC4EA /* LaunchScreen.xib */; };
 		8A68F58B1A71808A00FEC4EA /* FastestRPMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A68F58A1A71808A00FEC4EA /* FastestRPMTests.m */; };
+		8A68F5961A71810900FEC4EA /* speedNeedle.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A68F5941A71810900FEC4EA /* speedNeedle.png */; };
+		8A68F5971A71810900FEC4EA /* speedometer.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A68F5951A71810900FEC4EA /* speedometer.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		8A68F5841A71808A00FEC4EA /* FastestRPMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FastestRPMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A68F5891A71808A00FEC4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A68F58A1A71808A00FEC4EA /* FastestRPMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FastestRPMTests.m; sourceTree = "<group>"; };
+		8A68F5941A71810900FEC4EA /* speedNeedle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speedNeedle.png; path = ../speedNeedle.png; sourceTree = "<group>"; };
+		8A68F5951A71810900FEC4EA /* speedometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = speedometer.png; path = ../speedometer.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +85,11 @@
 		8A68F56D1A71808A00FEC4EA /* FastestRPM */ = {
 			isa = PBXGroup;
 			children = (
-				8A68F5721A71808A00FEC4EA /* AppDelegate.h */,
-				8A68F5731A71808A00FEC4EA /* AppDelegate.m */,
 				8A68F5751A71808A00FEC4EA /* ViewController.h */,
 				8A68F5761A71808A00FEC4EA /* ViewController.m */,
 				8A68F5781A71808A00FEC4EA /* Main.storyboard */,
+				8A68F5941A71810900FEC4EA /* speedNeedle.png */,
+				8A68F5951A71810900FEC4EA /* speedometer.png */,
 				8A68F57B1A71808A00FEC4EA /* Images.xcassets */,
 				8A68F57D1A71808A00FEC4EA /* LaunchScreen.xib */,
 				8A68F56E1A71808A00FEC4EA /* Supporting Files */,
@@ -96,6 +100,8 @@
 		8A68F56E1A71808A00FEC4EA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A68F5721A71808A00FEC4EA /* AppDelegate.h */,
+				8A68F5731A71808A00FEC4EA /* AppDelegate.m */,
 				8A68F56F1A71808A00FEC4EA /* Info.plist */,
 				8A68F5701A71808A00FEC4EA /* main.m */,
 			);
@@ -199,9 +205,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A68F5961A71810900FEC4EA /* speedNeedle.png in Resources */,
 				8A68F57A1A71808A00FEC4EA /* Main.storyboard in Resources */,
 				8A68F57F1A71808A00FEC4EA /* LaunchScreen.xib in Resources */,
 				8A68F57C1A71808A00FEC4EA /* Images.xcassets in Resources */,
+				8A68F5971A71810900FEC4EA /* speedometer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

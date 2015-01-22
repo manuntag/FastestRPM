@@ -1,25 +1,95 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speedometer.png" translatesAutoresizingMaskIntoConstraints="NO" id="UKC-7r-f8o">
+                                <rect key="frame" x="17" y="105" width="286" height="286"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fastest RPM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auG-xD-hVa">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRO-fP-fdI">
+                                <rect key="frame" x="17" y="464" width="104" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="2iF-sr-r6j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2a-v6-zXa">
+                                <rect key="frame" x="119" y="464" width="185" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="dSZ-B8-V20"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="speedNeedle.png" translatesAutoresizingMaskIntoConstraints="NO" id="ur3-N7-mSk">
+                                <rect key="frame" x="53" y="135" width="250" height="250"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UKC-7r-f8o" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2IF-Hr-En9"/>
+                            <constraint firstItem="ur3-N7-mSk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="43" id="55f-uj-YFf"/>
+                            <constraint firstItem="ur3-N7-mSk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="153" id="9hy-XC-Sne"/>
+                            <constraint firstItem="auG-xD-hVa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="F8s-cr-01O"/>
+                            <constraint firstItem="auG-xD-hVa" firstAttribute="centerX" secondItem="UKC-7r-f8o" secondAttribute="centerX" id="LiS-2Z-i1G"/>
+                            <constraint firstItem="UKC-7r-f8o" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="1" id="NCi-U6-RKQ"/>
+                            <constraint firstItem="MRO-fP-fdI" firstAttribute="top" secondItem="UKC-7r-f8o" secondAttribute="bottom" constant="73" id="b0e-rw-icB"/>
+                            <constraint firstItem="MRO-fP-fdI" firstAttribute="firstBaseline" secondItem="T2a-v6-zXa" secondAttribute="firstBaseline" id="ddb-61-7BK"/>
+                            <constraint firstItem="UKC-7r-f8o" firstAttribute="top" secondItem="auG-xD-hVa" secondAttribute="bottom" constant="33" id="fna-Fv-1LW"/>
+                            <constraint firstItem="UKC-7r-f8o" firstAttribute="trailing" secondItem="ur3-N7-mSk" secondAttribute="trailing" constant="41" id="lpn-RQ-9Za"/>
+                            <constraint firstItem="auG-xD-hVa" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="maA-s3-YBS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ur3-N7-mSk" secondAttribute="bottom" constant="218" id="qMv-9W-aLK"/>
+                            <constraint firstItem="MRO-fP-fdI" firstAttribute="leading" secondItem="UKC-7r-f8o" secondAttribute="leading" id="tXy-Wa-SeZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UKC-7r-f8o" secondAttribute="bottom" constant="177" id="uEa-cH-gAa"/>
+                            <constraint firstItem="T2a-v6-zXa" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="uS8-YR-W4d"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="MRO-fP-fdI" secondAttribute="bottom" constant="50" id="vD0-x7-vbC"/>
+                            <constraint firstItem="UKC-7r-f8o" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="85" id="yb6-HQ-ZMz"/>
+                            <constraint firstItem="T2a-v6-zXa" firstAttribute="baseline" secondItem="MRO-fP-fdI" secondAttribute="baseline" id="zwM-Qs-DPl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="speedLabel" destination="T2a-v6-zXa" id="Xta-15-PTp"/>
+                        <outlet property="speedNeedle" destination="ur3-N7-mSk" id="niA-3R-OWv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="202" y="319"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="speedNeedle.png" width="400" height="400"/>
+        <image name="speedometer.png" width="300" height="300"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" red="0.18668797610000001" green="0.76294732089999995" blue="0.7047269344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

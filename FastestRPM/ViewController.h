@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+-(void)gestureRecognizerRecord:(UIPanGestureRecognizer*)panGestureRecognizer;
+
 
 @end
 
